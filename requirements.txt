@@ -1,0 +1,8 @@
+streamlit
+mediapipe
+torch
+numpy
+opencv-python-headless
+pandas
+pillow
+matplotlib
