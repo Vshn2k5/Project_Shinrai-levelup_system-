@@ -1,39 +1,137 @@
-# Project_Shinrai-levelup_system- (ProdigyProtocol)
-Build a gamified personal development system that: •Tracks activities (study, coding, martial arts, workouts, memory drills, emotion control). •Awards XP, levels, skill points, and achievements. •Shows progression: skill trees, stat screens, daily quests, streaks, periodic tests.•Integrates with your daily routine, so you levelup as you live.
+# 🗡️ Prodigy Protocol 🛡️
 
-# Leveling System — MVP (Jan 1 2026 target)
+*(Formerly Project Shinrai)*
 
-Personal gamified life-tracker to turn study, training and skill-building into quests, XP, and levels.
+**Level up your life.**
 
-## MVP features
-- User profile
-- Dashboard with global level + skill bars
-- Tasks: Daily / Quests / Challenges
-- XP engine + leveling formula (XP_total(L) = 100 * L^2)
-- Skill trees with skill points on level-up
-- Timers (Pomodoro/training) and history export (CSV)
+Turn your daily routines, study habits, physical training, and professional goals into an epic RPG adventure. Complete quests, earn XP, gather coins, and ascend the ranks from **Rank E** to the legendary **Rank SSS**.
 
-## Tech stack
-- Frontend: React
-- Backend: Node.js + Express (or Supabase Edge Functions)
-- Database & Auth: Supabase (Postgres + Auth)
-- Hosting: Vercel + Supabase
+[Features](#-core-features--mechanics) • [Installation](#-getting-started-enter-the-game) • [Tech Stack](#️-technology-stack-the-game-engine) • [License](#-license)
 
-## Day 0
-- Wireframes: Dashboard, Quest Log, Skill Screen
-- 10 initial tasks to seed the app
-- Supabase SQL schema (see `supabase/schema.sql`)
-- React starter: `npx create-react-app luna-levels`
+</div>
 
-## Getting started (local)
-1. `git clone <your-repo>`
-2. `cd luna-levels`
-3. `npx create-react-app .`
-4. `npm start`
+---
 
-## XP formula
-Total XP to reach level L: `XP_total(L) = 100 * L^2`.
-XP to next level = `XP_total(L+1) - XP_total(L)`.
+## 🌍 The World of Prodigy Protocol
 
-## License
-MIT
+Prodigy Protocol is not just a to-do list; it's a comprehensive, gamified personal development system. By treating your real-life tasks as in-game quests, you maintain motivation, track your progression across multiple domains, and build a lasting streak of success.
+
+---
+
+## 🌟 Core Features & Mechanics
+
+### 📊 The Four Domains
+
+Your character's stats are divided into four core attributes, each with its own level and XP bar:
+
+- 🏃‍♂️ **Physical Attributes**: Fitness goals, health metrics, sleep schedules, and workout routines.
+- 🧠 **Mental Fortitude**: Study habits, memory drills, emotional control, and meditation.
+- 💻 **Technical Mastery**: Coding sessions, tool proficiency, and technical learning.
+- 🎨 **Creative Arts**: Writing, personal projects, art, and creative expression.
+
+### 📜 The Quest Board
+
+Take on challenges tailored to your real-life goals.
+
+- **Quest Types**: Daily, Weekly, Monthly, and Epic Chain Quests.
+- **Difficulty Scaling**: Easy, Medium, and Hard quests yield different XP and Coin rewards.
+- **Time Limits & Deadlines**: Complete quests before they expire to avoid penalties.
+
+### 🔥 Streaks & The Penalty System
+
+Consistency is key to leveling up.
+
+- **Maintain your Streak**: Earn milestone rewards for daily log-ins.
+- **The Penalty System**: Missed days lead to coin earning penalties and streak decay.
+- **Redemption Quests**: Complete special tasks to regain lost standing and repair your streak.
+
+### 🏪 The Merchant's Shop
+
+Spend your hard-earned coins in the In-Game Shop:
+
+- **Boosters**: Purchase temporary XP/Coin multipliers.
+- **Protections**: Buy Streak Freezes to protect your momentum on rest days.
+- **Cosmetics**: Unlock exclusive Profile Frames, Badges, and titles to show off your rank.
+
+### 👤 Player Profiling
+
+Configure your character sheet with extensive real-world details:
+
+- Health Metrics & Dietary Preferences
+- Professional & Career Goals
+- Learning Styles & Accountability Settings
+- Daily Progress Rings to visualize your targets at a glance.
+
+---
+
+## 🛠️ Technology Stack (The Game Engine)
+
+This project is built using modern, fast, and scalable technologies to ensure a smooth gameplay experience.
+
+- **Frontend Framework**: React 18 (TypeScript) powered by Vite ⚡
+- **State Management**: Zustand 🐻 (For snappy, global state)
+- **Routing**: React Router v7 🗺️
+- **Styling**: Tailwind CSS 🎨 (For beautiful, responsive interfaces)
+- **Animations**: Framer Motion 🎬 (For that buttery-smooth gamified feel)
+- **Icons**: Lucide React 🔮
+- **Backend & Database**: Supabase 🗄️ (PostgreSQL, Authentication, and Edge Functions)
+
+---
+
+## 🚀 Getting Started (Enter the Game)
+
+Ready to begin your journey? Follow these steps to set up the game on your local machine.
+
+### 📋 Prerequisites
+
+- **Node.js**: (v18+ recommended)
+- **npm** or **yarn**
+- **Supabase Account**: (For database and authentication services)
+
+### 📥 Installation Steps
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone <your-repo-url>
+   cd Project_Shinrai-levelup_system--main
+   ```
+2. **Install Dependencies**
+
+   ```bash
+   npm install
+   ```
+3. **Configure Environment Variables**
+   Equip your API keys. Copy the example `.env` file and fill in your Supabase credentials:
+
+   ```bash
+   cp .env.example .env
+   ```
+4. **Initialize the Database**
+   Run the Supabase migrations located in `supabase/migrations/` to set up the database schema for the game.
+5. **Run the Development Server**
+   Start the game locally:
+
+   ```bash
+   npm run dev
+   ```
+6. **Build for Production**
+   Ready for the final release?
+
+   ```bash
+   npm run build
+   ```
+
+---
+
+## 🤝 Contributing (Join the Guild)
+
+Want to help build the ultimate gamified life system? Feel free to fork this repository, submit Pull Requests, or open Issues for new feature ideas and bug reports.
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+
+<div align="center">
+  <i>"Level up as you live."</i>
+</div>
